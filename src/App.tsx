@@ -313,7 +313,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Main Content Area */}
-      <div className="flex-1 overflow-y-auto pb-24" ref={chatScrollRef}>
+      <div className="flex-1 overflow-y-auto pb-[calc(6rem+env(safe-area-inset-bottom))] pt-2" ref={chatScrollRef}>
         
         {/* Calendar Strip */}
         <div className="px-2 py-2 flex justify-between items-center mb-2">
@@ -486,8 +486,8 @@ export default function App() {
       </div>
 
       {/* Sticky Bottom Input */}
-      <div className="absolute bottom-0 left-0 w-full bg-white p-4 z-40 border-t border-slate-100">
-        <form onSubmit={handleTextSubmit} className="flex items-center gap-3 bg-[#f3f4f6] px-4 py-3 rounded-full">
+      <div className="absolute bottom-0 left-0 w-full bg-white p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-40 border-t border-slate-100 shadow-[0_-4px_15px_-5px_rgba(0,0,0,0.05)]">
+        <form onSubmit={handleTextSubmit} className="flex items-center gap-3 bg-[#f3f4f6] px-4 py-3 rounded-full shadow-inner">
           <input 
             type="file" 
             accept="image/*" 
