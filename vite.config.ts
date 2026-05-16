@@ -12,7 +12,7 @@ export default defineConfig(({mode}) => {
       tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'pwa-192x192.svg', 'pwa-512x512.svg'],
+        includeAssets: ['pwa-192x192.svg', 'pwa-512x512.svg'],
         manifest: {
           name: 'Nutrition Tracker',
           short_name: 'Nutrition',
@@ -43,7 +43,7 @@ export default defineConfig(({mode}) => {
       })
     ],
     define: {
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY || ''),
     },
     resolve: {
       alias: {
