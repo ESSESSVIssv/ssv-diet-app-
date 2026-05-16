@@ -1,0 +1,8 @@
+{
+  "name": "NutriAI Coach",
+  "description": "An AI-powered calorie and nutrition tracking mobile app that uses the camera to scan food, estimate macros, and act as a smart nutrition coach.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
